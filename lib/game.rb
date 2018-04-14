@@ -100,8 +100,10 @@ class Game
     winner == self.winner
     if winner == nil
       puts "Cat's Game!"
+      sleep(1)
     else
       puts "Congratulations #{winner}!"
+      sleep(1)
     end
   end
 
