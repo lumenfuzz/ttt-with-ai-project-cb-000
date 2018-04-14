@@ -28,7 +28,6 @@ class Players
         end
         move = 1
         board.cells.each do |cell|
-          binding.pry
           return move.to_s if cell == " "
           move += 1
         end
