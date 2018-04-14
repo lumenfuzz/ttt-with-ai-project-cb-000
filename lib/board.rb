@@ -44,8 +44,12 @@ class Board
 
   def valid_move?(input)
     cell_number = input.to_i - 1
-    return false if cell_number < 0 || cell_number > 8
-    return @cells[cell_number] == " "
+    if cell_number < 0 || cell_number > 8 ||  @cells[cell_number] != " "
+      puts "That move was invalid"
+      return false
+    else
+      return true
+    end
   end
 
   def update(input, player)
