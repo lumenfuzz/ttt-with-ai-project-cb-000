@@ -21,7 +21,6 @@ class Players
           end
           if potential_win
             combo.each do |slot|
-              binding.pry
               return (slot+1).to_s if board.cells[slot] == " "
             end
           end
