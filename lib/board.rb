@@ -47,7 +47,7 @@ class Board
     if cell_number < 0 || cell_number > 8 ||  @cells[cell_number] != " "
       puts "That move was invalid."
       puts "Please try again."
-      sleep(2)
+      sleep(1)
       puts ""
       return false
     else
