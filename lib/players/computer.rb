@@ -1,5 +1,3 @@
-require 'pry'
-
 class Players
   class Computer < Player
 
