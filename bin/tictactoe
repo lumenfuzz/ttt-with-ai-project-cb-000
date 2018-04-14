@@ -1,3 +1,25 @@
 #!/usr/bin/env ruby
 
 require_relative '../config/environment'
+
+puts "Welcome to Tic-Tac-Toe!"
+
+input = nil
+
+until input == "quit" || input == "exit" || input == "q"
+
+  puts "We offer a 0 player, 1 player, or 2 player version of the game."
+  puts "Which version would you like to play?"
+
+  input = gets.chomp
+  until input == "0" || input == "0 player" || input == "1" || input == "1 player" || input == "2" || input == "2 player" || input == "quit" || input == "exit" || input == "q" || input == "help"
+    puts "Please enter 0, 1, or 2.  You may also type 'quit' if you're done playing."
+  end
+
+  case input
+  when ("0" || "0 player")
+    puts "yeah"
+  end
+
+
+end
