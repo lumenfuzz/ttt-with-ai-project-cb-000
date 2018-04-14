@@ -31,7 +31,7 @@ until input == "quit" || input == "exit" || input == "q"
     puts "Would you like to try another version?"
     input = gets.strip
     until input == "y" || input == "yes" || input == "n" || input == "no" || input == "quit" || input == "q" || input == "exit"
-      puts "Enter 'yes' to play again.  Enter 'no' to quit."
+      puts "Enter 'yes' to play something.  Enter 'no' to quit."
       input = gets.strip
     end
     if input == "no" || input == "n"
