@@ -18,7 +18,7 @@ class Players
       if board.cells[4] == " "
         return "5"
       else
-        move = 0
+        move = 1
         board.cells.each do |cell|
           return move.to_s if cell == " "
           move += 1
