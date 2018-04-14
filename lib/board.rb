@@ -45,7 +45,10 @@ class Board
   def valid_move?(input)
     cell_number = input.to_i - 1
     if cell_number < 0 || cell_number > 8 ||  @cells[cell_number] != " "
-      puts "That move was invalid"
+      puts "That move was invalid."
+      puts "Please try again."
+      sleep(2)
+      puts ""
       return false
     else
       return true
