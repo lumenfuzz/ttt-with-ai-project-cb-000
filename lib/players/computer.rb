@@ -17,7 +17,7 @@ class Players
     def move(board)
       if board.cells[4] == " "
         binding.pry
-        return "4"
+        return "5"
       else
         move = 0
         board.cells.each do |cell|
