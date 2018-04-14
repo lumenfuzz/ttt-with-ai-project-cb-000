@@ -24,7 +24,7 @@ class Players
               return (slot+1).to_s if board.cells[slot] == " "
             end
           end
-        end    
+        end
         move = 1
         board.cells.each do |cell|
           return move.to_s if cell == " "
