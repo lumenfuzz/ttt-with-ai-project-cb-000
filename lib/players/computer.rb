@@ -33,7 +33,28 @@ class Players
           move += 1
         end
       end
+    else
+      opponent_token = "X" if self.token == "O"
+      opponent_token = "O" if self.token == "X"
+      WIN_COMBINATIONS.each do |combo|
+        potential_loss = false
+        combo.each do |slot|
+          potential_loss = true if board.cells[slot] == opponent_token
+        end
+        if potential_loss
+          combo.each do |slot|
+            binding.pry
+            return (slot+1).to_s if board.cells[slot] == " "
+          end
+        end
+      end
+      move = 1
+      board.cells.each do |cell|
+        binding.pry
+        return move.to_s if cell == " "
+        move += 1
+      end
     end
-
   end
+
 end
