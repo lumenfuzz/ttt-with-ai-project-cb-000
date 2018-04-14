@@ -65,6 +65,7 @@ until input == "quit" || input == "exit" || input == "q"
     input = gets.strip
     until input == "y" || input == "yes" || input == "n" || input == "no" || input == "quit" || input == "q" || input == "exit"
       puts "Enter 'yes' to play again.  Enter 'no' to quit."
+      input = gets.strip
     end
     if input == "no" || input == "n"
       input = "exit"
