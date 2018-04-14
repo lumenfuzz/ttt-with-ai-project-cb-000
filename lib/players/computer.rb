@@ -10,6 +10,7 @@ class Players
 
     def move(board)
       board.display
+      puts ""
       if board.cells[4] == " "
         return "5"
       elsif board.cells[4] == self.token
