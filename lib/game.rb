@@ -77,12 +77,14 @@ class Game
     input = -1
     case current_player_turn
     when 1
+      input = self.player_1.move(self.board)
       until self.board.valid_move?(input)
         input = self.player_1.move(self.board)
       end
       self.board.update(input, @player_1)
       @current_player_turn = 2
     when 2
+      input = self.player_1.move(self.board)
       until self.board.valid_move?(input)
         input = self.player_2.move(self.board)
       end
