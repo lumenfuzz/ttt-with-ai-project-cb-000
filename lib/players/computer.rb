@@ -16,12 +16,10 @@ class Players
 
     def move(board)
       if board.cells[4] == " "
-        binding.pry
         return "5"
       else
         move = 0
         board.cells.each do |cell|
-          binding.pry
           return move.to_s if cell == " "
           move += 1
         end
