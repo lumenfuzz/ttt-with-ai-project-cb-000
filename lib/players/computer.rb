@@ -15,7 +15,7 @@ class Players
     ]
 
     def move(board)
-      if board.cells[5] == " "
+      if board.cells[4] == " "
         binding.pry
         return "4"
       else
